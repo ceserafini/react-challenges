@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 export default function Timer () {
   const [time, setTime] = useState(60)
   useEffect(() => {
-    const decrementTime = () => setTime(prevTime => prevTime - 1)
+    const decrementTime: any = () => setTime(prevTime => prevTime - 1)
     setInterval(decrementTime, 1000)
     return () => {
       clearInterval(decrementTime)
