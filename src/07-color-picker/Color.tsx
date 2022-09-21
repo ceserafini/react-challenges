@@ -1,4 +1,4 @@
-export default function Color ({ hex, name }) {
+export default function Color ({ hex, name }: {hex: string, name: string}) {
   return (
     <button
       className='color-square'
